@@ -4,7 +4,7 @@ import os
 import time
 import sys
 import socket
-import requests
+import request
 from colorama import Fore
 
 
@@ -36,7 +36,7 @@ def __target__():
     my_list = ["admin" , "ADMIN" , "admin/login" , "Admin" , "Admin/Login" , "ADMIN/LOGIN" , "admin/password" , "adminlogin" , "AdminLogin" , "ADMINLOGIN" , "ADMIN/ORG" , "PassAdmin" , "passadmin" , "admins/password"]
     for i in my_list:
         r2 = target + "/" + i
-        r3 = requests.get(str(r2))
+        r3 = request.get(str(r2))
         if r3.status_code == 200:
             print(Fore.GREEN + "[+] ~ " + Fore.GREEN + str(r2))
         else:
