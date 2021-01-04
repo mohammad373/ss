@@ -22,7 +22,7 @@ def __target__():
             sys.exit()
         except:
             sys.exit()
-    r1 = requests.get(target)
+    r1 = requests.get(str(target))
     if r1.status_code != 200:
         try:
             time.sleep(1)
