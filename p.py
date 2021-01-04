@@ -22,17 +22,17 @@ def __target__():
             sys.exit()
         except:
             sys.exit()
-    r1 = requests.get(str(target))
-    if r1.status_code != 200:
-        try:
-            time.sleep(1)
-            print(Fore.RED + "\n[!] ~ Error : Your Domain Is Not Found ;(")
-            time.sleep(1)
-            sys.exit()
-        except:
-            sys.exit()
-    if r1.status_code == 200:
-        print(Fore.GREEN + "[+] ~ Ok , Your Domain Is Found ;)")
+    #r1 = requests.get(str(target))
+    #if r1.status_code != 200:
+     #   try:
+      #      time.sleep(1)
+       #     print(Fore.RED + "\n[!] ~ Error : Your Domain Is Not Found ;(")
+        #    time.sleep(1)
+         #   sys.exit()
+       # except:
+        #    sys.exit()
+    #if r1.status_code == 200:
+     #   print(Fore.GREEN + "[+] ~ Ok , Your Domain Is Found ;)")
     my_list = ["admin" , "ADMIN" , "admin/login" , "Admin" , "Admin/Login" , "ADMIN/LOGIN" , "admin/password" , "adminlogin" , "AdminLogin" , "ADMINLOGIN" , "ADMIN/ORG" , "PassAdmin" , "passadmin" , "admins/password"]
     for i in my_list:
         r2 = target + "/" + i
